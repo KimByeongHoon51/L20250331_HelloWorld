@@ -12,15 +12,26 @@ using namespace std;
 // bit -> byte(8bit) -> byte ascii
 // 변수 표기는 파스칼 표기법
 
+enum EColor
+{
+	Red =0,
+};
+
 int main()
 {
 	// char
 	// int
 	// float
+	// 대입연산자
+	// 산술연산자
+	// 변수선언
+	// ★모두 설명할 줄 알아야 한다!!!★
+
+	EColor Color = EColor::Red;
 	int Number1 = 5;
 	int Number2 = 4;
 	float A = (float)5.5f;
-	int B = (int)A;
+	int B = static_cast<int>(A);
 	// double은 계산 시간이 float보다 2배 더 걸림
 
 	// +, -, *, /, %
